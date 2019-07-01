@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.03"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settings_8tn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#F50808"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="Home Operating Conditions"
+            android:textSize="18sp"
+            app:fontFamily="@font/archivo_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.03"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="For previous 24 hours:"
+            android:textSize="18sp"
+            app:fontFamily="@font/archivo_black" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight = "0.85"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/indoor_temp_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Indoor temperature(F)"
+                android:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/indoor_temp_8tn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showNumberPicker1"
+                android:text="65"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/num_win_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Number of windows open"
+                android:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/num_win_open_8tn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="2"/>
+        </LinearLayout>
+
+     </LinearLayout>
+
+
+</LinearLayout>
